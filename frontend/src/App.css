@@ -1,3 +1,5 @@
+/* Custom animations and styles for the IEEE Jadara University website */
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -31,4 +33,87 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Custom styles for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom gradient animations */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease-in-out infinite;
+}
+
+/* Custom hover effects for cards */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 70, 139, 0.15);
+}
+
+/* Custom button styles */
+.btn-ieee {
+    background: linear-gradient(45deg, #00468B, #FFB800);
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-ieee:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 70, 139, 0.3);
+}
+
+/* Loading animations */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* IEEE brand colors as CSS variables */
+:root {
+    --ieee-blue: #00468B;
+    --ieee-gold: #FFB800;
+    --ieee-light-blue: #0056A3;
+    --ieee-dark-gold: #e6a600;
 }
