@@ -1,18 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Timeline from '../components/Timeline';
+import Officers from '../components/Officers';
 import Footer from '../components/Footer';
 
-const HomePage = () => {
+const OfficersPage = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
-      <Timeline />
+      <Officers />
       <Footer />
     </div>
   );
 };
 
-export default HomePage;
+export default OfficersPage;
