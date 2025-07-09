@@ -5,17 +5,17 @@ export const officers = [
     id: 1,
     name: "Rayan Dahdooly",
     title: "Chair",
-    bio: "Computer Science student passionate about technology leadership and innovation. Leading the branch towards excellence in technical activities and student engagement.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    bio: "Computer Science student .",
+    image: "images/rayan.jpg",
     email: "chair@ieee-jadara.org",
-    linkedin: "https://linkedin.com/in/rayan-dahdooly"
+    linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
   },
   {
     id: 2,
     name: "Abdelsamad Jaradat",
     title: "Vice Chair",
-    bio: "Electrical Engineering student with expertise in project management and student coordination. Supporting the chair in driving branch activities and member engagement.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    bio: ".",
+    image: "images/Abdelsamad.jpg",
     email: "vice-chair@ieee-jadara.org",
     linkedin: "https://linkedin.com/in/abdelsamad-jaradat"
   },
@@ -23,28 +23,28 @@ export const officers = [
     id: 3,
     name: "Abdelmonm Alsnajleh",
     title: "Secretary",
-    bio: "Information Systems student responsible for documentation, communications, and maintaining accurate records of all branch activities and meetings.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    bio: ".",
+    image: "images/Abdelmonm.jpg",
     email: "secretary@ieee-jadara.org",
-    linkedin: "https://linkedin.com/in/abdelmonm-alsnajleh"
+    linkedin: "https://www.linkedin.com/in/5y3b"
   },
   {
     id: 4,
     name: "Suliman Alkasasbeh",
     title: "Treasurer",
-    bio: "Business Administration student managing branch finances, budgets, and coordinating fundraising activities to support various branch initiatives.",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face",
+    bio: "Computer Science student at Jadara University with a passion for data science,Active IEEE member and Treasurer of the student branch,Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
+    image: "images/Suliman.jpg",
     email: "treasurer@ieee-jadara.org",
-    linkedin: "https://linkedin.com/in/suliman-alkasasbeh"
+    linkedin: "www.linkedin.com/in/suliman-alkasasbeh-b58822364"
   },
   {
     id: 5,
-    name: "Basil Slati",
+    name: "Abdallah  Abdalrohman",
     title: "Media Officer",
-    bio: "Media and Communications student handling branch publicity, social media presence, and creating engaging content for all branch activities.",
+    bio: "Robotics and artificial intelligence.",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
     email: "media@ieee-jadara.org",
-    linkedin: "https://linkedin.com/in/basil-slati"
+    linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
 ];
 
