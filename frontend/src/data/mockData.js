@@ -42,7 +42,7 @@ export const officers = [
     name: "Abdallah  Abdalrohman",
     title: "Media Officer",
     bio: "Robotics and artificial intelligence.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
+    image: "images/Abdallah .jpg",
     email: "media@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
