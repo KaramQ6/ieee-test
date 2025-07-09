@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-16 h-16 bg-gradient-to-r from-[#00468B] to-[#FFB800] rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-  <img src="/images/ieee-logo.png" alt="IEEE Logo" className="w-10 h-10 object-contain" />
+  <img src="/images/ieee-logo.png" alt="IEEE Logo" className="w-14 h-14 object-contain" />
 </div>
               <div>
                 <h3 className="text-xl font-bold text-white">{branchInfo.name}</h3>
