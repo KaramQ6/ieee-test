@@ -17,7 +17,7 @@ export const officers = [
     bio: ".",
     image: "images/Abdelsamad.jpg",
     email: "vice-chair@ieee-jadara.org",
-    linkedin: "https://linkedin.com/in/abdelsamad-jaradat"
+    linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
   },
   {
     id: 3,
