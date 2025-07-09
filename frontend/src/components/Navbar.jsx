@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-          <div className="w-16 h-14 sm:w-20 sm:h-20 bg-gradient-to-r from-[#00468B] to-[#FFB800] rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300">
+          <div className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-r from-[#00468B] to-[#FFB800] rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300">
   <img src="/images/ieee-logo.png" alt="IEEE Logo" className="w-14 h-14 sm:w-16 sm:h-16 object-contain" />
 </div>
             <div className="hidden sm:block">
