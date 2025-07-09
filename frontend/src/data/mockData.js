@@ -15,7 +15,7 @@ export const officers = [
     name: "Abdelsamad Jaradat",
     title: "Vice Chair",
     bio: ".",
-    image: "images/Abdelsamad .jpg",
+    image: "images/Abdelsamad.jpg",
     email: "vice-chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
   },
