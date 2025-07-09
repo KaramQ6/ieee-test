@@ -79,7 +79,7 @@ export const ieeeTimeline = [
 export const openingDayEvent = {
   title: "IEEE Jadara University Student Branch Opening Day",
   description: "Join us for the official launch of IEEE Jadara University Student Branch! This inaugural event will introduce our mission, showcase opportunities, and welcome new members to our growing community.",
-  date: "2025-09-15",
+  date: "2025-07-15",
   time: "10:00 AM",
   location: "Main Auditorium, Jadara University",
   schedule: [
@@ -92,7 +92,7 @@ export const openingDayEvent = {
     {
       time: "10:30 AM - 11:00 AM",
       session: "Opening Ceremony",
-      speaker: "Dr. Ahmad Khalil",
+      speaker: "Dr. ***",
       description: "Welcome address and branch introduction"
     },
     {
@@ -159,15 +159,14 @@ export const branchInfo = {
   activitiesCount: "25+",
   contact: {
     email: "info@ieee-jadara.org",
-    phone: "+962 2 720 1120",
+    phone: "+962 *****",
     address: "Jadara University, Irbid, Jordan"
   }
 };
 
 export const socialLinks = {
-  facebook: "https://facebook.com/ieee.jadara",
-  instagram: "https://instagram.com/ieee_jadara",
-  linkedin: "https://linkedin.com/company/ieee-jadara-university",
+  instagram: "https://instagram.com/ieee_ju",
+  linkedin: "https://www.linkedin.com/company/ieee-jadara-university-student-branch",
   email: "info@ieee-jadara.org"
 };
 
