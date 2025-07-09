@@ -167,7 +167,7 @@ export const branchInfo = {
 export const socialLinks = {
   instagram: "https://instagram.com/ieee_ju",
   linkedin: "https://www.linkedin.com/company/ieee-jadara-university-student-branch",
-  email: "info@ieee-jadara.org"
+  email: "info@ieee-jadara.org "
 };
 
 export const quickLinks = [
