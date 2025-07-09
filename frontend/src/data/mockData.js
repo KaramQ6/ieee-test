@@ -5,7 +5,7 @@ export const officers = [
     id: 1,
     name: "Rayan Dahdooly",
     title: "Chair",
-    bio: "Computer Science student .",
+    bio: "Computer Science student.",
     image: "/images/rayan.jpg",
     email: "chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
@@ -14,8 +14,8 @@ export const officers = [
     id: 2,
     name: "Abdelsamad Jaradat",
     title: "Vice Chair",
-    bio: ".",
-    image: "images/Abdelsamad.jpg",
+    bio: "",
+    image: "/images/abdelsamad.jpg",
     email: "vice-chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
   },
@@ -23,8 +23,8 @@ export const officers = [
     id: 3,
     name: "Abdelmonm Alsnajleh",
     title: "Secretary",
-    bio: ".",
-    image: "images/Abdelmonm.jpg",
+    bio: "",
+    image: "/images/abdelmonm.jpg",
     email: "secretary@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/5y3b"
   },
@@ -32,17 +32,17 @@ export const officers = [
     id: 4,
     name: "Suliman Alkasasbeh",
     title: "Treasurer",
-    bio: "Computer Science student at Jadara University with a passion for data science,Active IEEE member and Treasurer of the student branch,Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
-    image: "images/Suliman.jpg",
+    bio: "Computer Science student at Jadara University with a passion for data science. Active IEEE member and Treasurer of the student branch. Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
+    image: "/images/suliman.jpg",
     email: "treasurer@ieee-jadara.org",
-    linkedin: "www.linkedin.com/in/suliman-alkasasbeh-b58822364"
+    linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364"
   },
   {
     id: 5,
-    name: "Abdallah  Abdalrohman",
+    name: "Abdallah Abdalrohman",
     title: "Media Officer",
     bio: "Robotics and artificial intelligence.",
-    image: "images/Abdallah.jpg",
+    image: "/images/abdallah.jpg",
     email: "media@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
@@ -52,78 +52,79 @@ export const ieeeTimeline = [
   {
     year: "1884",
     title: "IEEE Founded",
-    description: "The Institute of Electrical and Electronics Engineers was established"
+    description: "The Institute of Electrical and Electronics Engineers was established."
   },
   {
     year: "1963",
     title: "Global Expansion",
-    description: "IEEE expanded internationally with regional offices worldwide"
+    description: "IEEE expanded internationally with regional offices worldwide."
   },
   {
     year: "1980",
     title: "Student Branches",
-    description: "IEEE Student Branch program launched to support student engagement"
+    description: "IEEE Student Branch program launched to support student engagement."
   },
   {
     year: "2020",
     title: "Digital Innovation",
-    description: "IEEE embraced digital transformation for enhanced member experience"
+    description: "IEEE embraced digital transformation for enhanced member experience."
   },
   {
     year: "2025",
     title: "Jadara Branch",
-    description: "IEEE Jadara University Student Branch officially established"
+    description: "IEEE Jadara University Student Branch officially established."
   }
 ];
 
 export const openingDayEvent = {
   title: "IEEE Jadara University Student Branch Opening Day",
-  description: "Join us for the official launch of IEEE Jadara University Student Branch! This inaugural event will introduce our mission, showcase opportunities, and welcome new members to our growing community.",
+  description:
+    "Join us for the official launch of IEEE Jadara University Student Branch! This inaugural event will introduce our mission, showcase opportunities, and welcome new members to our growing community.",
   date: "2025-07-15",
-  time: "10:00 AM",
+  time: "10:00:00", // صيغة 24 ساعة لتجنب مشاكل
   location: "Main Auditorium, Jadara University",
   schedule: [
     {
       time: "10:00 AM - 10:30 AM",
       session: "Registration & Welcome Coffee",
       speaker: "Event Volunteers",
-      description: "Check-in and networking with fellow students"
+      description: "Check-in and networking with fellow students."
     },
     {
       time: "10:30 AM - 11:00 AM",
       session: "Opening Ceremony",
       speaker: "Dr. ***",
-      description: "Welcome address and branch introduction"
+      description: "Welcome address and branch introduction."
     },
     {
       time: "11:00 AM - 11:45 AM",
       session: "IEEE Overview & Benefits",
       speaker: "IEEE Regional Representative",
-      description: "Understanding IEEE membership and opportunities"
+      description: "Understanding IEEE membership and opportunities."
     },
     {
       time: "11:45 AM - 12:00 PM",
       session: "Networking Break",
       speaker: "All Participants",
-      description: "Refreshments and networking opportunity"
+      description: "Refreshments and networking opportunity."
     },
     {
       time: "12:00 PM - 12:45 PM",
       session: "Technical Workshop Preview",
       speaker: "Branch Officers",
-      description: "Sneak peek at upcoming workshops and activities"
+      description: "Sneak peek at upcoming workshops and activities."
     },
     {
       time: "12:45 PM - 1:15 PM",
       session: "Q&A Session",
       speaker: "Panel Discussion",
-      description: "Questions and answers about branch activities"
+      description: "Questions and answers about branch activities."
     },
     {
       time: "1:15 PM - 2:00 PM",
       session: "Membership Registration",
       speaker: "Registration Team",
-      description: "Sign up for IEEE membership and branch activities"
+      description: "Sign up for IEEE membership and branch activities."
     }
   ],
   sponsors: [
@@ -153,13 +154,14 @@ export const openingDayEvent = {
 export const branchInfo = {
   name: "IEEE Jadara University Student Branch",
   tagline: "Advancing Technology for Humanity",
-  mission: "To advance technology for humanity while fostering innovation and professional growth among students at Jadara University. We strive to create a vibrant community of future engineers and technologists who will shape tomorrow's world.",
+  mission:
+    "To advance technology for humanity while fostering innovation and professional growth among students at Jadara University. We strive to create a vibrant community of future engineers and technologists who will shape tomorrow's world.",
   established: "2025",
   membersCount: "150+",
   activitiesCount: "25+",
   contact: {
     email: "info@ieee-jadara.org",
-    phone: "+962 *****",
+    phone: "+962-xxxxxxx",
     address: "Jadara University, Irbid, Jordan"
   }
 };
@@ -167,7 +169,7 @@ export const branchInfo = {
 export const socialLinks = {
   instagram: "https://instagram.com/ieee_ju",
   linkedin: "https://www.linkedin.com/company/ieee-jadara-university-student-branch",
-  email: "info@ieee-jadara.org "
+  email: "info@ieee-jadara.org"
 };
 
 export const quickLinks = [

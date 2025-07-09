@@ -6,7 +6,7 @@ const EventCountdown = ({ targetDate }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date().getTime();
-      const distance = targetDate.getTime() - now;
+      const distance = new Date(targetDate).getTime() - now;
 
       if (distance > 0) {
         setTimeLeft({

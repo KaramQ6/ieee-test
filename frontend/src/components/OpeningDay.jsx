@@ -1,20 +1,23 @@
 import React from 'react';
+
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Calendar, Clock, MapPin, Users, ArrowLeft, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 import { openingDayEvent } from '../data/mockData';
 import EventCountdown from '../components/EventCountdown';
 
 const OpeningDay = () => {
-  const eventDateTime = new Date(`${openingDayEvent.date} ${openingDayEvent.time}`);
+  // اضبط الوقت بصيغة 24 ساعة مع الثواني
+  const eventDateTime = `${openingDayEvent.date}T10:00:00`;
 
   const formattedDate = new Date(openingDayEvent.date).toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   });
 
   return (
@@ -34,8 +37,8 @@ const OpeningDay = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Cards Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        {/* Container for Event Details and Countdown side by side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Event Details Card */}
           <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
@@ -45,9 +48,8 @@ const OpeningDay = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
-                {openingDayEvent.description}
-              </p>
+              <p className="text-gray-700 leading-relaxed">{openingDayEvent.description}</p>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                   <Calendar className="h-5 w-5 text-[#FFB800]" />
@@ -56,13 +58,15 @@ const OpeningDay = () => {
                     <p className="text-sm text-gray-600">Event Date</p>
                   </div>
                 </div>
+
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                   <Clock className="h-5 w-5 text-[#FFB800]" />
                   <div>
-                    <p className="font-semibold text-gray-900">{openingDayEvent.time}</p>
+                    <p className="font-semibold text-gray-900">10:00 AM</p>
                     <p className="text-sm text-gray-600">Start Time</p>
                   </div>
                 </div>
+
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg md:col-span-2">
                   <MapPin className="h-5 w-5 text-[#FFB800]" />
                   <div>
@@ -81,16 +85,28 @@ const OpeningDay = () => {
             </CardHeader>
             <CardContent className="p-8">
               <EventCountdown targetDate={eventDateTime} />
-              <p className="text-center text-gray-600 mt-6 text-lg">
-                Until the big day arrives!
-              </p>
+              <p className="text-center text-gray-600 mt-6 text-lg">Until the big day arrives!</p>
             </CardContent>
           </Card>
         </div>
 
-        {/* باقي الأقسام (schedule, sponsors, cta) بتحطهم تحت هون عادي */}
-        {/* احذف أو أضف حسب ما بدك */}
+        {/* Registration Card */}
+        <div className="mt-12">
+          <Card className="shadow-lg border-0 bg-gradient-to-r from-[#00468B] to-[#FFB800] text-white">
+            <CardContent className="p-8 text-center">
+              <Users className="h-12 w-12 mx-auto mb-4 opacity-90" />
+              <h3 className="text-xl font-bold mb-4">Reserve Your Spot</h3>
+              <p className="mb-6 opacity-90">
+                Don't miss out on this exciting opportunity to be part of our IEEE community
+              </p>
+              <Button className="bg-white text-[#00468B] hover:bg-gray-100 font-bold px-8 py-3 hover:scale-105 transition-transform duration-300">
+                Register Now
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
 
+        {/* باقي محتوى الصفحة حسب حاجتك */}
       </div>
     </div>
   );
