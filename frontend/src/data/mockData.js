@@ -43,7 +43,7 @@ export const officers = [
     title: "Media Officer",
     bio: "Robotics and artificial intelligence.",
     image: "/images/abdallah.jpg",
-    email: "media@ieee-jadara.org",
+    email: "Abdallahalshyyab@ieee.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
 ];
