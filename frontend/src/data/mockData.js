@@ -6,7 +6,7 @@ export const officers = [
     name: "Rayan Dahdooly",
     title: "Chair",
     bio: "Computer Science student .",
-    image: "images/rayan.jpg",
+    image: "/images/rayan.jpg",
     email: "chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
   },
