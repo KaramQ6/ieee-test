@@ -51,7 +51,6 @@ const Footer = () => {
             <div className="mt-4 flex space-x-5">
               <motion.a whileHover={{ y: -2, scale: 1.1 }} href={socialLinks.instagram} className="text-gray-400 hover:text-white"><Instagram /></motion.a>
               <motion.a whileHover={{ y: -2, scale: 1.1 }} href={socialLinks.linkedin} className="text-gray-400 hover:text-white"><Linkedin /></motion.a>
-              <motion.a whileHover={{ y: -2, scale: 1.1 }} href={socialLinks.facebook} className="text-gray-400 hover:text-white"><Facebook /></motion.a>
             </div>
           </div>
         </div>
