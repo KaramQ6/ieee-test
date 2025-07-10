@@ -1,16 +1,15 @@
 import React from 'react';
-
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Calendar, Clock, MapPin, Users, ArrowLeft, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import { openingDayEvent } from '../data/mockData';
+import { openingDayEvent, ieeeTimeline } from '../data/mockData';
 import EventCountdown from '../components/EventCountdown';
+import TimelineSection from '../components/TimelineSection';
 
 const OpeningDay = () => {
-  // اضبط الوقت بصيغة 24 ساعة مع الثواني
   const eventDateTime = `${openingDayEvent.date}T10:00:00`;
 
   const formattedDate = new Date(openingDayEvent.date).toLocaleDateString('en-US', {
@@ -49,7 +48,6 @@ const OpeningDay = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <p className="text-gray-700 leading-relaxed">{openingDayEvent.description}</p>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                   <Calendar className="h-5 w-5 text-[#FFB800]" />
@@ -106,7 +104,8 @@ const OpeningDay = () => {
           </Card>
         </div>
 
-        {/* باقي محتوى الصفحة حسب حاجتك */}
+        {/* Timeline Section */}
+        <TimelineSection timeline={ieeeTimeline} />
       </div>
     </div>
   );
