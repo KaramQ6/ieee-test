@@ -5,8 +5,8 @@ import HomePage from "./pages/HomePage";
 import OfficersPage from "./pages/OfficersPage";
 import OpeningDayPage from "./pages/OpeningDayPage";
 
-// 1. التصحيح: استيراد المكون بالاسم الصحيح
-import AboutIEEE from "./pages/AboutIEEE"; 
+// The path is corrected to 'components' here
+import AboutIEEE from "./components/AboutIEEE"; 
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/officers" element={<OfficersPage />} />
           <Route path="/opening-day" element={<OpeningDayPage />} />
           
-          {/* 2. التصحيح: استخدام المكون بالاسم الصحيح */}
+          {/* This line is correct */}
           <Route path="/about-ieee" element={<AboutIEEE />} />
         </Routes>
       </BrowserRouter>
