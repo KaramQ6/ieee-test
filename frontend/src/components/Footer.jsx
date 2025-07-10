@@ -1,4 +1,6 @@
 import React from 'react';
+// 1. Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { socialLinks, branchInfo, quickLinks } from '../data/mockData';
 
@@ -11,8 +13,8 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-16 h-16 bg-gradient-to-r from-[#00468B] to-[#FFB800] rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-  <img src="/images/ieee-logo.png" alt="IEEE Logo" className="w-14 h-14 object-contain" />
-</div>
+                <img src="/images/ieee-logo.png" alt="IEEE Logo" className="w-14 h-14 object-contain" />
+              </div>
               <div>
                 <h3 className="text-xl font-bold text-white">{branchInfo.name}</h3>
                 <p className="text-gray-400 text-sm">Student Branch</p>
@@ -55,11 +57,18 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
+                  {/* 3. Using Link for internal navigation */}
+                  <Link to={link.href} className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
+              {/* 2. Add the new "About IEEE" link here */}
+              <li>
+                <Link to="/about-ieee" className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
+                  About IEEE
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -96,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 IEEE Jadara University Student Branch. All rights reserved.
+              &copy; 2025 IEEE Jadara University Student Branch. All rights reserved.
             </p>
             <p className="text-[#FFB800] text-sm font-semibold">
               Advancing Technology for Humanity
