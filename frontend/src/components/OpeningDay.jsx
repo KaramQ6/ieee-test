@@ -1,15 +1,13 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import { Calendar, Clock, MapPin, Users, ArrowLeft, Star } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, ArrowLeft, Mic } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-import { openingDayEvent, ieeeTimeline } from '../data/mockData';
+import { openingDayEvent } from '../data/mockData';
 import EventCountdown from '../components/EventCountdown';
-import TimelineSection from '../components/TimelineSection';
 
 const OpeningDay = () => {
+  // Correction: Used backticks for template literal
   const eventDateTime = `${openingDayEvent.date}T10:00:00`;
 
   const formattedDate = new Date(openingDayEvent.date).toLocaleDateString('en-US', {
@@ -20,23 +18,25 @@ const OpeningDay = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#00468B] to-[#FFB800] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="inline-flex items-center mb-6 text-white hover:text-blue-100 transition-colors">
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+          <Link to="/" className="flex items-center text-gray-600 hover:text-[#00468B] transition-colors">
             <ArrowLeft className="h-5 w-5 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Opening Day Event</h1>
-          <p className="text-xl md:text-2xl opacity-90">
-            Join us for the official launch of our IEEE Student Branch
-          </p>
+          <div className="text-center">
+            <h1 className="text-2xl font-bold text-[#00468B]">Opening Day Event</h1>
+            <p className="text-sm text-gray-500">Join us for the official launch of our IEEE Student Branch</p>
+          </div>
+          {/* Placeholder for potential actions like language switch or login */}
+          <div className="w-28"></div>
         </div>
-      </div>
+      </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Container for Event Details and Countdown side by side */}
+        {/* Event Details and Countdown */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Event Details Card */}
           <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
@@ -56,7 +56,6 @@ const OpeningDay = () => {
                     <p className="text-sm text-gray-600">Event Date</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                   <Clock className="h-5 w-5 text-[#FFB800]" />
                   <div>
@@ -64,7 +63,6 @@ const OpeningDay = () => {
                     <p className="text-sm text-gray-600">Start Time</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg md:col-span-2">
                   <MapPin className="h-5 w-5 text-[#FFB800]" />
                   <div>
@@ -88,27 +86,48 @@ const OpeningDay = () => {
           </Card>
         </div>
 
-        {/* Registration Card */}
+        {/* Event Schedule Timeline */}
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-[#00468B] mb-8 text-center">Event Schedule</h2>
+          <div className="space-y-6">
+            {openingDayEvent.schedule.map((item, index) => (
+              <Card key={index} className="border-l-4 border-[#FFB800] bg-white shadow-md">
+                <CardContent className="p-6 space-y-2">
+                  <div className="flex items-center text-sm text-gray-500">
+                    <Clock className="h-4 w-4 mr-2 text-[#00468B]" />
+                    {item.time}
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#00468B]">{item.session}</h3>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Mic className="h-4 w-4 mr-2 text-[#FFB800]" />
+                    {item.speaker}
+                  </div>
+                  <p className="text-gray-700">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Registration Call to Action */}
         <div className="mt-12">
-          <Card className="shadow-lg border-0 bg-gradient-to-r from-[#00468B] to-[#FFB800] text-white">
+          <Card className="shadow-lg border-0 bg-gradient-to-r from-[#00468B] to-[#006CB8] text-white">
             <CardContent className="p-8 text-center">
               <Users className="h-12 w-12 mx-auto mb-4 opacity-90" />
               <h3 className="text-xl font-bold mb-4">Reserve Your Spot</h3>
               <p className="mb-6 opacity-90">
-                Don't miss out on this exciting opportunity to be part of our IEEE community
+                Don't miss out on this exciting opportunity to be part of our IEEE community.
               </p>
-              <Button className="bg-white text-[#00468B] hover:bg-gray-100 font-bold px-8 py-3 hover:scale-105 transition-transform duration-300">
+              <Button className="bg-white text-[#00468B] hover:bg-[#FFB800] hover:text-white font-bold px-8 py-3 hover:scale-105 transition-transform duration-300">
                 Register Now
               </Button>
             </CardContent>
           </Card>
         </div>
-
-        {/* Timeline Section */}
-        <TimelineSection timeline={ieeeTimeline} />
       </div>
     </div>
   );
 };
 
 export default OpeningDay;
+
