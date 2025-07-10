@@ -64,9 +64,16 @@ const Timeline = () => {
             <p className="text-lg mb-6 opacity-90 max-w-2xl mx-auto">
               Join us in continuing IEEE's tradition of advancing technology for humanity
             </p>
-            <button className="bg-white text-[#00468B] font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 hover:scale-105 transform">
+            {/* --- التعديل هنا --- */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfV2xN2Yr11wZEkkRmhJ_MEwpSiTS0XpKNx0FACsZg8rt9YzQ/viewform?usp=header"
+              target="_blank" // لفتح الرابط في تبويب جديد
+              rel="noopener noreferrer" // لأسباب أمنية عند استخدام target="_blank"
+              className="bg-white text-[#00468B] font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 hover:scale-105 transform inline-block" // أضفت inline-block ليعمل transform
+            >
               Start Your Journey
-            </button>
+            </a>
+            {/* --- نهاية التعديل --- */}
           </div>
         </div>
       </div>
