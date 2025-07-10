@@ -1,44 +1,48 @@
 import React from 'react';
-import { Button } from '../components/ui/button'; // Ensure this path is correct
 
 const JoinJSYP = () => {
-  return (
-    // --- The changes are in this line ---
-    <section className="min-h-screen bg-indigo-950 text-white flex flex-col items-center justify-center px-4 py-20 text-center">
-      
-      {/* Title */}
-      <h1 className="text-4xl md:text-6xl font-bold mb-6">
-        Join JSYP
-      </h1>
+  return (
+    <section className="relative min-h-screen bg-gradient-to-br from-[#0a001f] via-[#15002e] to-[#1a0033] flex items-center justify-center text-white overflow-hidden px-4 py-20">
 
-      {/* Description */}
-      <p className="text-lg md:text-xl max-w-2xl mb-10 opacity-90">
-        Are you ready to shape the future of innovation and leadership? The Jordan Student & Young Professionals (JSYP) program empowers students like you to grow, lead, and connect.
-      </p>
+      {/* تأثير خلفية شعاعي خفيف */}
+      <div className="absolute inset-0">
+        <div className="w-full h-full bg-[radial-gradient(circle_at_30%_30%,#6a00ff33_0%,#000000_100%)] blur-2xl opacity-20" />
+      </div>
 
-      {/* Buttons */}
-      <div className="flex flex-col sm:flex-row gap-6">
-        <Button
-          asChild
-          className="bg-white text-indigo-950 font-bold px-8 py-4 text-lg rounded-full hover:bg-gray-200 hover:scale-105 transition-transform"
-        >
-          <a href="https://jsyp.jordan.ieee.org" target="_blank" rel="noopener noreferrer">
-            JSYP Site
-          </a>
-        </Button>
+      {/* المحتوى */}
+      <div className="relative z-10 text-center max-w-3xl">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          Join JSYP
+        </h1>
 
-        <Button
-          asChild
-          className="bg-ieee-yellow text-black font-bold px-8 py-4 text-lg rounded-full hover:bg-yellow-400 hover:scale-105 transition-transform"
-        >
-          <a href="https://ieee.surveysparrow.com/s/jsyp2025/tt-EZ-kM" target="_blank" rel="noopener noreferrer">
-            Apply Now
-          </a>
-        </Button>
-      </div>
-      
-    </section>
-  );
+        <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+          Are you ready to shape the future of innovation and leadership? <br />
+          The Jordan Student & Young Professionals (JSYP) program empowers students like you to grow, lead, and connect.
+        </p>
+
+        {/* الأزرار */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <a
+            href="https://jsyp.jordan.ieee.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-purple-700 to-indigo-700 hover:from-purple-800 hover:to-indigo-800 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300"
+          >
+            JSYP Site
+          </a>
+
+          <a
+            href="https://ieee.surveysparrow.com/s/jsyp2025/tt-EZ-kM"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default JoinJSYP;
