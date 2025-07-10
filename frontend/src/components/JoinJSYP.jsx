@@ -1,9 +1,11 @@
 import React from 'react';
-import { Button } from '../components/ui/button'; // Adjusted path assuming 'ui' is in components
+import { Button } from '../components/ui/button'; // Ensure this path is correct
 
 const JoinJSYP = () => {
   return (
-    <section className="min-h-screen bg-[#001F3F] text-white flex flex-col items-center justify-center px-4 py-20 text-center">
+    // --- The changes are in this line ---
+    <section className="min-h-screen bg-indigo-950 text-white flex flex-col items-center justify-center px-4 py-20 text-center">
+      
       {/* Title */}
       <h1 className="text-4xl md:text-6xl font-bold mb-6">
         Join JSYP
@@ -18,7 +20,7 @@ const JoinJSYP = () => {
       <div className="flex flex-col sm:flex-row gap-6">
         <Button
           asChild
-          className="bg-white text-[#001F3F] font-bold px-8 py-4 text-lg rounded-full hover:bg-gray-100 hover:scale-105 transition-transform"
+          className="bg-white text-indigo-950 font-bold px-8 py-4 text-lg rounded-full hover:bg-gray-200 hover:scale-105 transition-transform"
         >
           <a href="https://jsyp.jordan.ieee.org" target="_blank" rel="noopener noreferrer">
             JSYP Site
@@ -27,13 +29,14 @@ const JoinJSYP = () => {
 
         <Button
           asChild
-          className="bg-[#FFB800] text-black font-bold px-8 py-4 text-lg rounded-full hover:bg-yellow-400 hover:scale-105 transition-transform"
+          className="bg-ieee-yellow text-black font-bold px-8 py-4 text-lg rounded-full hover:bg-yellow-400 hover:scale-105 transition-transform"
         >
-          <a href="https://example.com/apply" target="_blank" rel="noopener noreferrer">
+          <a href="https://ieee.surveysparrow.com/s/jsyp2025/tt-EZ-kM" target="_blank" rel="noopener noreferrer">
             Apply Now
           </a>
         </Button>
       </div>
+      
     </section>
   );
 };
