@@ -1,5 +1,4 @@
 import React from 'react';
-// 1. Import Link from react-router-dom
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { socialLinks, branchInfo, quickLinks } from '../data/mockData';
@@ -55,20 +54,22 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-[#FFB800]">Quick Links</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  {/* 3. Using Link for internal navigation */}
-                  <Link to={link.href} className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-              {/* 2. Add the new "About IEEE" link here */}
+              {/* The manually added, correct link */}
               <li>
                 <Link to="/about-ieee" className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
                   About IEEE
                 </Link>
               </li>
+              {/* Filter out the broken "About IEEE" from mockData and map the rest */}
+              {quickLinks
+                .filter(link => link.name !== 'About IEEE') // <-- This line removes the duplicate
+                .map((link, index) => (
+                  <li key={index}>
+                    <Link to={link.href} className="text-gray-300 hover:text-[#FFB800] transition-colors duration-300 hover:translate-x-1 transform inline-block">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
