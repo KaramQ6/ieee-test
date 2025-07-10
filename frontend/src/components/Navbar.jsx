@@ -3,17 +3,18 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const NavItem = ({ to, children }) => {
+// --- Modified NavItem to accept a custom activeColor prop ---
+const NavItem = ({ to, children, activeColor = 'bg-ieee-yellow' }) => {
   const location = useLocation();
   const isActive = location.pathname === to;
 
   return (
-    <Link to={to} className="relative text-gray-700 hover:text-ieee-blue transition-colors duration-300 font-medium">
+    <Link to={to} className="relative text-gray-700 hover:text-ieee-blue transition-colors duration-300 font-medium py-2">
       {children}
       {isActive && (
         <motion.span
           layoutId="underline"
-          className="absolute -bottom-2 left-0 w-full h-0.5 bg-ieee-yellow"
+          className={`absolute -bottom-2 left-0 w-full h-0.5 ${activeColor}`}
         />
       )}
     </Link>
@@ -38,6 +39,8 @@ const Navbar = () => {
             <NavItem to="/opening-day">Opening Day</NavItem>
             <NavItem to="/officers">Our Team</NavItem>
             <NavItem to="/about-ieee">About IEEE</NavItem>
+            {/* 1. Added the new link with a custom purple color for the active state */}
+            <NavItem to="/join-jsyp" activeColor="bg-purple-500">Join JSYP</NavItem>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,12 +70,15 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden border-t border-gray-100"
+            onClick={() => setIsOpen(false)}
           >
             <div className="px-4 pt-2 pb-4 space-y-2">
               <Link to="/" className="block py-2 text-gray-700 font-medium">Home</Link>
               <Link to="/opening-day" className="block py-2 text-gray-700 font-medium">Opening Day</Link>
               <Link to="/officers" className="block py-2 text-gray-700 font-medium">Our Team</Link>
               <Link to="/about-ieee" className="block py-2 text-gray-700 font-medium">About IEEE</Link>
+              {/* 2. Added the new link to the mobile menu */}
+              <Link to="/join-jsyp" className="block py-2 text-gray-700 font-medium">Join JSYP</Link>
             </div>
           </motion.div>
         )}
