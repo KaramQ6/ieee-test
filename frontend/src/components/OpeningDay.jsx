@@ -9,6 +9,9 @@ import EventCountdown from '../components/EventCountdown';
 const OpeningDay = () => {
   const eventDateTime = `${openingDayEvent.date}T10:00:00`;
 
+  // The registration link is now set
+  const registrationLink = 'https://forms.gle/P9uFXFEmRd8m6r3a7';
+
   const formattedDate = new Date(openingDayEvent.date).toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -18,7 +21,7 @@ const OpeningDay = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header - Styled to match Officers page */}
+      {/* Header */}
       <div className="bg-gradient-to-r from-[#00468B] to-[#FFB800] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link to="/" className="inline-flex items-center mb-6 text-white hover:text-blue-100 transition-colors">
@@ -115,8 +118,10 @@ const OpeningDay = () => {
               <p className="mb-6 opacity-90 max-w-2xl mx-auto">
                 Don't miss out on this exciting opportunity to be part of our IEEE community.
               </p>
-              <Button className="bg-white text-[#00468B] hover:bg-gray-100 font-bold px-8 py-3 rounded-full hover:scale-105 transition-transform duration-300">
-                Register Now
+              <Button asChild className="bg-white text-[#00468B] hover:bg-gray-100 font-bold px-8 py-3 rounded-full hover:scale-105 transition-transform duration-300">
+                <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+                  Register Now
+                </a>
               </Button>
             </CardContent>
           </Card>
