@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
@@ -7,7 +6,6 @@ import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <div className="min-h-screen">
-      <Navbar />
       <Hero />
       <Timeline />
       <Footer />
