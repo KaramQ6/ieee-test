@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/images/ieee-logo.png" alt="IEEE Logo" className="h-12 w-auto" />
+              <img src="/images/ieee-logo2.png" alt="IEEE Logo" className="h-12 w-auto" />
               <div>
                 <h3 className="text-xl font-bold text-white">IEEE Jadara University</h3>
                 <p className="text-gray-400 text-sm">Student Branch</p>
