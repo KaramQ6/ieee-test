@@ -6,7 +6,7 @@ export const officers = [
     name: "Rayan Dahdooly",
     title: "Chair",
     bio: "Computer Science student.",
-    image: "/images/rayan.jpg",
+    image: "/images/rayan.webp",
     email: "chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
   },
@@ -15,7 +15,7 @@ export const officers = [
     name: "Abdelsamad Jaradat",
     title: "Vice Chair",
     bio: "",
-    image: "/images/abdelsamad.jpg",
+    image: "/images/abdelsamad.webp",
     email: "vice-chair@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
   },
@@ -24,7 +24,7 @@ export const officers = [
     name: "Abdelmonm Alsnajleh",
     title: "Secretary",
     bio: "",
-    image: "/images/abdelmonm.jpg",
+    image: "/images/abdelmonm.webp",
     email: "secretary@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/5y3b"
   },
@@ -33,7 +33,7 @@ export const officers = [
     name: "Suliman Alkasasbeh",
     title: "Treasurer",
     bio: "Computer Science student at Jadara University with a passion for data science. Active IEEE member and Treasurer of the student branch. Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
-    image: "/images/suliman.jpg",
+    image: "/images/suliman.webp",
     email: "treasurer@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364"
   },
@@ -42,7 +42,7 @@ export const officers = [
     name: "Abdallah Abdalrohman",
     title: "Media Officer",
     bio: "Robotics and artificial intelligence.",
-    image: "/images/abdallah.jpg",
+    image: "/images/abdallah.webp",
     email: "Abdallahalshyyab@ieee.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
