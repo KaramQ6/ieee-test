@@ -1,34 +1,18 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-const App = () => {
+const JoinJSYP = () => {
 return (
 
-{/* Navbar */}
+{/* Hero */}
 
-JSYP
+Jordan Students and Young Professionals (JSYP)
+Innovation meets Impact.
 
-Home
-About
-Mission
-Hackathon
-Team
-Partners
-Contact
+Empowering Jordan's next generation of tech leaders.
 
 
-  {/* Hero */}
-  <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32">
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">Jordan Students and Young Professionals (JSYP)</h1>
-    <p className="text-xl md:text-2xl mb-6">Innovation meets Impact.</p>
-    <p className="text-lg text-gray-300 max-w-2xl mb-8">
-      Empowering Jordan's next generation of tech leaders.
-    </p>
-    <div className="flex gap-4">
-      <a href="#hackathon" className="bg-pink-500 px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition">Explore Events</a>
-      <a href="#contact" className="bg-cyan-500 px-6 py-3 rounded-full font-semibold hover:bg-cyan-600 transition">Join Us</a>
-    </div>
-  </section>
+Explore Events
+Join Us
+
 
   {/* About */}
   <section id="about" className="py-24 px-6 max-w-6xl mx-auto text-center">
@@ -127,4 +111,4 @@ Contact
 
 );
 };
-createRoot(document.getElementById('root')).render();
+export default JoinJSYP;
