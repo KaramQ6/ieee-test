@@ -368,7 +368,7 @@ const JoinJSYP = () => {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
             >
-              Join Hackathon 2025
+              Join us at the conference 
             </a>
           </div>
         </div>
