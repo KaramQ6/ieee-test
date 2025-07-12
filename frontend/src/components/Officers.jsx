@@ -64,6 +64,7 @@ const Officers = () => {
                           className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
                         >
                           <Linkedin className="h-4 w-4" />
+                          </a>
                           <a
                           href={officer.insta}
                           target="_blank"
