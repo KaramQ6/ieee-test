@@ -8,7 +8,8 @@ export const officers = [
     bio: "Computer Science student.",
     image: "/images/rayan.webp",
     email: "chair@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
+    linkedin: "https://www.linkedin.com/in/rayan-dahdooly",
+    insta: "https://www.instagram.com/rayan_dahdooly/",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const officers = [
     bio: "",
     image: "/images/abdelsamad.webp",
     email: "vice-chair@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
+    linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291",
+    insta: "https://www.instagram.com/abdelsamad.20/",
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ export const officers = [
     bio: "",
     image: "/images/abdelmonm.webp",
     email: "secretary@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/5y3b"
+    linkedin: "https://www.linkedin.com/in/5y3b",
+    insta: "hhttps://www.instagram.com/5y3.b/",
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ export const officers = [
     bio: "Computer Science student at Jadara University with a passion for data science. Active IEEE member and Treasurer of the student branch. Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
     image: "/images/suliman.webp",
     email: "treasurer@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364"
+    linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364",
+    insta: "https://www.instagram.com/suliman__alkasasbeh/",
   },
   {
     id: 5,
