@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { Mail, Linkedin, ArrowLeft } from 'lucide-react';
+import { Mail, Linkedin, ArrowLeft, InstagramIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { officers } from '../data/mockData';
 
@@ -100,6 +100,15 @@ const Officers = () => {
                       >
                         <Linkedin className="h-3 w-3 mr-1" />
                         LinkedIn
+                      </a>
+                      <a
+                        href={officer.insta}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center hover:text-[#00468B]"
+                      >
+                        <InstagramIcon className="h-3 w-3 mr-1" />
+                        IG
                       </a>
                     </div>
                   </div>

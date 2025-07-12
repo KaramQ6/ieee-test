@@ -45,6 +45,7 @@ export const officers = [
     image: "/images/abdallah.webp",
     email: "Abdallahalshyyab@ieee.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
+    insta: "https://www.instagram.com/iaboodomar/"
   }
 ];
 
