@@ -1,23 +1,94 @@
-# Getting Started with Create React App
+# IEEE Jadara University Student Branch Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance, accessible React website built with Vite for the IEEE Jadara University Student Branch.
 
-## Available Scripts
+## 🚀 Performance Optimizations
 
-In the project directory, you can run:
+This website is optimized for peak performance following Lighthouse/PageSpeed best practices:
 
-### `npm start`
+### ⚡ Core Optimizations
+- **Vite Build System**: Lightning-fast development and optimized production builds
+- **Code Splitting**: Lazy loading of components and routes using React.lazy()
+- **Image Optimization**: WebP format with PNG fallbacks using `<picture>` elements
+- **Bundle Optimization**: Efficient chunking and tree-shaking
+- **CSS Optimization**: Minimized CSS with autoprefixer and cssnano
+- **Service Worker**: Advanced caching strategies for better repeat visit performance
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎨 User Experience
+- **Loading States**: Smooth loading indicators with skeleton screens
+- **Error Boundaries**: Graceful error handling with fallback UI
+- **Responsive Design**: Mobile-first approach with optimal layouts
+- **Accessibility**: WCAG 2.1 compliant with proper ARIA labels and semantic HTML
+- **Motion Preferences**: Respects user's reduced motion preferences
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📱 Progressive Web App (PWA)
+- **Service Worker**: Offline functionality with intelligent caching
+- **Web App Manifest**: Installable as a native app
+- **Performance Monitoring**: Web Vitals reporting for continuous optimization
 
-### `npm test`
+## 🛠 Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 19** - Latest React with concurrent features
+- **Vite** - Fast build tool and development server  
+- **React Router v7** - Client-side routing with lazy loading
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
+- **Radix UI** - Accessible component primitives
+
+## 📦 Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Build for production**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+4. **Preview production build**
+   ```bash
+   npm run preview
+   # or
+   yarn preview
+   ```
+
+## 🎯 Performance Features
+
+### Image Optimization
+All images use the `<picture>` element with WebP and PNG fallbacks:
+```jsx
+<picture>
+  <source srcSet="/images/logo.webp" type="image/webp" />
+  <img src="/images/logo.png" alt="IEEE Logo" width="120" height="80" loading="lazy" />
+</picture>
+```
+
+### Lazy Loading
+Components are lazy-loaded to reduce initial bundle size:
+```jsx
+const HomePage = React.lazy(() => import('./pages/HomePage'));
+const OfficersPage = React.lazy(() => import('./pages/OfficersPage'));
+```
+
+### Key Web Vitals Targets
+- **LCP (Largest Contentful Paint)**: < 2.5s
+- **FID (First Input Delay)**: < 100ms  
+- **CLS (Cumulative Layout Shift)**: < 0.1
+
+Built with ❤️ by the IEEE Jadara University Student Branch
 
 ### `npm run build`
 

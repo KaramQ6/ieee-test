@@ -9,45 +9,158 @@
 
   <title>IEEE Jadara University Student Branch</title>
 
+  <!-- Preconnect to external resources for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  
+  <!-- DNS prefetch for additional performance -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+  <!-- Critical CSS for font loading with font-display: swap -->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
+    }
+    
+    /* Critical styles to prevent layout shift */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+    
+    /* Loading spinner styles */
+    .loading-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #0f62fe;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Meta tags for SEO and social media -->
   <meta property="og:title" content="IEEE Jadara University Student Branch" />
   <meta property="og:description" content="الموقع الرسمي لفرع طلبة IEEE في جامعة جدارا. انضم إلينا لاستكشاف الفعاليات والورشات والمزيد." />
-  <meta property="og:image" content="https://ieee-ju.live/images/ieee-logo3.webp" />
+  <meta property="og:image" content="/images/ieee-logo3.webp" />
   <meta property="og:url" content="https://ieee-ju.live" />
   <meta property="og:type" content="website" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="IEEE Jadara University Student Branch" />
   <meta name="twitter:description" content="الموقع الرسمي لفرع طلبة IEEE في جامعة جدارا. انضم إلينا لاستكشاف الفعاليات والورشات والمزيد." />
-  <meta name="twitter:image" content="https://ieee-ju.live/images/ieee-logo3.webp" />
+  <meta name="twitter:image" content="/images/ieee-logo3.webp" />
   
-  <link rel="icon" href="%PUBLIC_URL%/images/ieee-logo3.webp" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/icon-192x192.webp" />
+  <!-- Favicons and app icons -->
+  <link rel="icon" href="/images/ieee-logo3.webp" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/images/icon-192x192.webp" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7RX75EM08"></script>
+  <!-- Defer Google Analytics to improve performance -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-S7RX75EM08');
+    // Defer Google Analytics loading
+    function loadGA() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S7RX75EM08';
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-S7RX75EM08');
+    }
+    
+    // Load GA after page load
+    if (window.addEventListener) {
+      window.addEventListener('load', loadGA);
+    } else {
+      window.attachEvent('onload', loadGA);
+    }
   </script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+      <h1>JavaScript Required</h1>
+      <p>You need to enable JavaScript to run this app.</p>
+    </div>
+  </noscript>
+  
+  <!-- Loading fallback -->
+  <div id="loading-fallback" class="loading-spinner">
+    <div>
+      <div class="spinner"></div>
+      <p style="margin-top: 20px; color: #666;">Loading IEEE Jadara...</p>
+    </div>
+  </div>
+  
   <div id="root"></div>
 
+  <!-- Service Worker registration with error handling -->
   <script>
+    // Hide loading fallback when React loads
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        const fallback = document.getElementById('loading-fallback');
+        if (fallback && document.getElementById('root').children.length > 0) {
+          fallback.style.display = 'none';
+        }
+      }, 100);
+    });
+
+    // Service Worker registration
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
-          .then(reg => console.log('Service worker registered ✅', reg))
+          .then(reg => {
+            console.log('Service worker registered ✅', reg);
+            // Update available
+            reg.addEventListener('updatefound', () => {
+              const newWorker = reg.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New content available, refresh page
+                  if (confirm('New content available! Refresh to update?')) {
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
           .catch(err => console.warn('Service worker failed 🚫', err));
       });
     }
+  </script>
+</body>
+
+</html>
   </script>
 
   <script>
