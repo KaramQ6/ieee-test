@@ -64,6 +64,13 @@ const Officers = () => {
                           className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
                         >
                           <Linkedin className="h-4 w-4" />
+                          <a
+                          href={officer.insta}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
+                        >
+                          <InstagramIcon className="h-4 w-4" />
                         </a>
                       </div>
                     </div>
