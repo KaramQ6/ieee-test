@@ -40,7 +40,7 @@ export const officers = [
   {
     id: 5,
     name: "Abdallah Abdalrohman",
-    title: "Media Officer",
+    title: "Media Chair",
     bio: "Robotics and artificial intelligence.",
     image: "/images/abdallah.webp",
     email: "Abdallahalshyyab@ieee.org",
