@@ -25,7 +25,7 @@ const JoinJSYP = () => {
       </p>
 
       {/* Mission Statement */}
-      <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl">
+      <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
         Empowering Jordan's next generation of tech leaders through innovation, collaboration, and real-world impact.
       </p>
 
@@ -35,7 +35,6 @@ const JoinJSYP = () => {
         href="https://jsyp.jordan.ieee.org/"
         target="_blank"
         rel="noopener noreferrer"
-        // Changed the button color to a purple-to-pink gradient
         className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
       >
         Visit Official Website
