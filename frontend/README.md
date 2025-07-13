@@ -1,109 +1,70 @@
-# IEEE Jadara University Student Branch Website
+# Getting Started with Create React App
 
-A high-performance, accessible React website built with Vite for the IEEE Jadara University Student Branch.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🚀 Performance Optimizations
+## Available Scripts
 
-This website is optimized for peak performance following Lighthouse/PageSpeed best practices:
+In the project directory, you can run:
 
-### ⚡ Core Optimizations
-- **Vite Build System**: Lightning-fast development and optimized production builds
-- **Code Splitting**: Lazy loading of components and routes using React.lazy()
-- **Image Optimization**: WebP format with PNG fallbacks using `<picture>` elements
-- **Bundle Optimization**: Efficient chunking and tree-shaking
-- **CSS Optimization**: Minimized CSS with autoprefixer and cssnano
-- **Service Worker**: Advanced caching strategies for better repeat visit performance
+### `npm start`
 
-### 🎨 User Experience
-- **Loading States**: Smooth loading indicators with skeleton screens
-- **Error Boundaries**: Graceful error handling with fallback UI
-- **Responsive Design**: Mobile-first approach with optimal layouts
-- **Accessibility**: WCAG 2.1 compliant with proper ARIA labels and semantic HTML
-- **Motion Preferences**: Respects user's reduced motion preferences
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### 📱 Progressive Web App (PWA)
-- **Service Worker**: Offline functionality with intelligent caching
-- **Web App Manifest**: Installable as a native app
-- **Performance Monitoring**: Web Vitals reporting for continuous optimization
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🛠 Technologies Used
+### `npm test`
 
-- **React 19** - Latest React with concurrent features
-- **Vite** - Fast build tool and development server  
-- **React Router v7** - Client-side routing with lazy loading
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Smooth animations and transitions
-- **Radix UI** - Accessible component primitives
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 📦 Installation
+### `npm run build`
 
-1. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3. **Build for production**
-   ```bash
-   npm run build
-   # or
-   yarn build
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-4. **Preview production build**
-   ```bash
-   npm run preview
-   # or
-   yarn preview
-   ```
+### `npm run eject`
 
-## 🎯 Performance Features
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Image Optimization
-All images use the `<picture>` element with WebP and PNG fallbacks:
-```jsx
-<picture>
-  <source srcSet="/images/logo.webp" type="image/webp" />
-  <img src="/images/logo.png" alt="IEEE Logo" width="120" height="80" loading="lazy" />
-</picture>
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Lazy Loading
-Components are lazy-loaded to reduce initial bundle size:
-```jsx
-const HomePage = React.lazy(() => import('./pages/HomePage'));
-const OfficersPage = React.lazy(() => import('./pages/OfficersPage'));
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Key Web Vitals Targets
-- **LCP (Largest Contentful Paint)**: < 2.5s
-- **FID (First Input Delay)**: < 100ms  
-- **CLS (Cumulative Layout Shift)**: < 0.1
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## 🚀 Deployment
+## Learn More
 
-### Netlify Configuration
-Make sure your Netlify build settings are:
-- **Build command**: `npm run build`
-- **Publish directory**: `dist`
-- **Base directory**: `frontend` (if deploying from monorepo)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Build for Production
-```bash
-npm run build
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-The build creates optimized static files in the `dist/` directory ready for deployment.
+### Code Splitting
 
-### Performance Monitoring
-The website includes Web Vitals monitoring and comprehensive error boundaries for production reliability.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Built with ❤️ by the IEEE Jadara University Student Branch
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

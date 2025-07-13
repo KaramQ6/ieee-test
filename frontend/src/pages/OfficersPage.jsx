@@ -1,8 +1,12 @@
-import React, { memo } from 'react';
+import React from 'react';
 import Officers from '../components/Officers';
 
 const OfficersPage = () => {
-  return <Officers />;
+  return (
+    <div className="min-h-screen">
+      <Officers />
+    </div>
+  );
 };
 
-export default memo(OfficersPage);
+export default OfficersPage;

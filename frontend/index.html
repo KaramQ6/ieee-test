@@ -80,6 +80,29 @@
   <link rel="icon" href="/images/ieee-logo3.webp" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="apple-touch-icon" href="/images/icon-192x192.webp" />
+
+  <!-- Defer Google Analytics to improve performance -->
+  <script>
+    // Defer Google Analytics loading
+    function loadGA() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S7RX75EM08';
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-S7RX75EM08');
+    }
+    
+    // Load GA after page load
+    if (window.addEventListener) {
+      window.addEventListener('load', loadGA);
+    } else {
+      window.attachEvent('onload', loadGA);
+    }
+  </script>
 </head>
 
 <body>
@@ -100,8 +123,41 @@
   
   <div id="root"></div>
 
-  <!-- Vite entry point -->
-  <script type="module" src="/src/main.jsx"></script>
+  <!-- Service Worker registration with error handling -->
+  <script>
+    // Hide loading fallback when React loads
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        const fallback = document.getElementById('loading-fallback');
+        if (fallback && document.getElementById('root').children.length > 0) {
+          fallback.style.display = 'none';
+        }
+      }, 100);
+    });
+
+    // Service Worker registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => {
+            console.log('Service worker registered ✅', reg);
+            // Update available
+            reg.addEventListener('updatefound', () => {
+              const newWorker = reg.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New content available, refresh page
+                  if (confirm('New content available! Refresh to update?')) {
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch(err => console.warn('Service worker failed 🚫', err));
+      });
+    }
+  </script>
 </body>
 
 </html>
@@ -176,7 +232,7 @@
         border: 1px solid rgba(255, 255, 255, 0.25) !important;
       ">
     <div style="display: flex; flex-direction: row; align-items: center">
-      <img style="width: 20px; height: 20px; margin-right: 8px;" src="/images/Devlogo.webp" alt="Developer Logo" />
+      <img style="width: 20px; height: 20px; margin-right: 8px;" src="%PUBLIC_URL%/images/Devlogo.webp" alt="Developer Logo" />
       <p style="
             color: #000000;
             font-family: -apple-system, BlinkMacSystemFont,

@@ -35,6 +35,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
+    "cra-template": "1.2.0",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.1",
@@ -47,6 +48,7 @@
     "react-hook-form": "^7.56.2",
     "react-resizable-panels": "^3.0.1",
     "react-router-dom": "^7.5.1",
+    "react-scripts": "5.0.1",
     "sonner": "^2.0.3",
     "tailwind-merge": "^3.2.0",
     "tailwindcss-animate": "^1.0.7",
@@ -54,11 +56,9 @@
     "zod": "^3.24.4"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite",
-    "test": "vitest"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
   },
   "browserslist": {
     "production": [
@@ -73,23 +73,16 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.6.0",
+    "@craco/craco": "^7.1.0",
+    "@eslint/js": "9.23.0",
     "autoprefixer": "^10.4.20",
-    "cssnano": "^6.1.2",
     "eslint": "9.23.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.4",
     "globals": "15.15.0",
     "postcss": "^8.4.49",
-    "react-error-boundary": "^6.0.0",
-    "tailwindcss": "^3.4.17",
-    "terser": "^5.43.1",
-    "vite": "^5.4.19",
-    "vitest": "^1.6.1",
-    "web-vitals": "^5.0.3"
+    "tailwindcss": "^3.4.17"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
