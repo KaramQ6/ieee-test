@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { Mail, Linkedin, ArrowLeft } from 'lucide-react';
+import { Mail, Linkedin, ArrowLeft, InstagramIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { officers } from '../data/mockData';
 
@@ -11,7 +11,10 @@ const Officers = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-[#00468B] to-[#FFB800] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="inline-flex items-center mb-6 text-white hover:text-blue-100 transition-colors">
+          <Link
+            to="/"
+            className="inline-flex items-center mb-6 text-white hover:text-blue-100 transition-colors"
+          >
             <ArrowLeft className="h-5 w-5 mr-2" />
             Back to Home
           </Link>
@@ -36,9 +39,9 @@ const Officers = () => {
                   <img
                     src={officer.image}
                     alt={officer.name}
+                    loading="lazy"
                     className="w-full h-64 object-cover"
                   />
-
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-center text-white p-6">
@@ -61,6 +64,14 @@ const Officers = () => {
                           className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
                         >
                           <Linkedin className="h-4 w-4" />
+                          </a>
+                          <a
+                          href={officer.insta}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
+                        >
+                          <InstagramIcon className="h-4 w-4" />
                         </a>
                       </div>
                     </div>
@@ -82,7 +93,10 @@ const Officers = () => {
                   {/* Desktop Contact Info */}
                   <div className="mt-4 hidden md:block">
                     <div className="flex justify-center space-x-4 text-sm text-gray-600">
-                      <a href={`mailto:${officer.email}`} className="flex items-center hover:text-[#00468B]">
+                      <a
+                        href={`mailto:${officer.email}`}
+                        className="flex items-center hover:text-[#00468B]"
+                      >
                         <Mail className="h-3 w-3 mr-1" />
                         Contact
                       </a>
@@ -94,6 +108,15 @@ const Officers = () => {
                       >
                         <Linkedin className="h-3 w-3 mr-1" />
                         LinkedIn
+                      </a>
+                      <a
+                        href={officer.insta}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center hover:text-[#00468B]"
+                      >
+                        <InstagramIcon className="h-3 w-3 mr-1" />
+                        IG
                       </a>
                     </div>
                   </div>
