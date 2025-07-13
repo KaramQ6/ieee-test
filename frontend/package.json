@@ -57,7 +57,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "npx update-browserslist-db@latest && craco build",
     "test": "craco test"
   },
   "browserslist": {
