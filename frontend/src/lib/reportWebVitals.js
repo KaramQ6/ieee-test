@@ -12,7 +12,7 @@ export const reportWebVitals = (onPerfEntry) => {
 };
 
 // Default performance monitoring
-export default function reportWebVitals() {
+export default function sendWebVitals() {
   const vitalsUrl = 'https://vitals.vercel-analytics.com/v1/vitals';
   
   function sendToAnalytics(metric) {

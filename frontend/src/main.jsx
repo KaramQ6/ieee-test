@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.jsx';
 import './index.css';
 
 // Hide loading fallback
@@ -21,7 +21,7 @@ root.render(
 // Performance monitoring
 if (import.meta.env.PROD) {
   // Report web vitals in production
-  import('./lib/reportWebVitals').then(({ reportWebVitals }) => {
-    reportWebVitals();
+  import('./lib/reportWebVitals').then((module) => {
+    module.default();
   });
 }

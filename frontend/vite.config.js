@@ -8,6 +8,7 @@ export default defineConfig({
   // Build optimizations
   build: {
     target: 'es2015', // Modern browsers support
+    outDir: 'dist', // Output directory for Netlify
     minify: 'terser',
     terserOptions: {
       compress: {
