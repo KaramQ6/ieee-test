@@ -63,12 +63,12 @@ const AboutIEEE = () => {
                 <VideoCard 
                     title="IEEE Introduction"
                     description="An overview of the IEEE, highlighting its mission as the world's largest professional association for advancing technology, its global reach, and the benefits of membership like networking, workshops, and scholarships."
-                    url="https://www.youtube.com/watch?v=...2"
+                    url="https://www.youtube.com/watch?v=...6"
                 />
                 <VideoCard 
                     title="What is IEEE - ماهي منظمة IEEE العالمية"
                     description="This video explains what IEEE is, its non-profit nature, its mission to advance technology for humanity, and its key activities including research publication, conferences, and developing standards."
-                    url="https://www.youtube.com/watch?v=...3"
+                    url="https://www.youtube.com/watch?v=...7"
                 />
             </div>
         </div>
