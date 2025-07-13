@@ -6,50 +6,45 @@ export const officers = [
     name: "Rayan Dahdooly",
     title: "Chair",
     bio: "Computer Science student.",
-    image: "/images/rayan.webp",
+    image: "/images/rayan.jpg",
     email: "chair@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/rayan-dahdooly",
-    insta: "https://www.instagram.com/rayan_dahdooly/",
+    linkedin: "https://www.linkedin.com/in/rayan-dahdooly"
   },
   {
     id: 2,
     name: "Abdelsamad Jaradat",
     title: "Vice Chair",
     bio: "",
-    image: "/images/abdelsamad.webp",
+    image: "/images/abdelsamad.jpg",
     email: "vice-chair@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291",
-    insta: "https://www.instagram.com/abdelsamad.20/",
+    linkedin: "https://www.linkedin.com/in/abdelsamad-jaradat-1194a6291"
   },
   {
     id: 3,
     name: "Abdelmonm Alsnajleh",
     title: "Secretary",
     bio: "",
-    image: "/images/abdelmonm.webp",
+    image: "/images/abdelmonm.jpg",
     email: "secretary@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/5y3b",
-    insta: "hhttps://www.instagram.com/5y3.b/",
+    linkedin: "https://www.linkedin.com/in/5y3b"
   },
   {
     id: 4,
     name: "Suliman Alkasasbeh",
     title: "Treasurer",
     bio: "Computer Science student at Jadara University with a passion for data science. Active IEEE member and Treasurer of the student branch. Ambassador for the IEEE Modeling Hackathon, dedicated to promoting innovation and teamwork in the tech field.",
-    image: "/images/suliman.webp",
+    image: "/images/suliman.jpg",
     email: "treasurer@ieee-jadara.org",
-    linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364",
-    insta: "https://www.instagram.com/suliman__alkasasbeh/",
+    linkedin: "https://www.linkedin.com/in/suliman-alkasasbeh-b58822364"
   },
   {
     id: 5,
     name: "Abdallah Abdalrohman",
-    title: "Media Chair",
+    title: "Media Officer",
     bio: "Robotics and artificial intelligence.",
-    image: "/images/abdallah.webp",
+    image: "/images/abdallah.jpg",
     email: "Abdallahalshyyab@ieee.org",
-    linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276",
-    insta: "https://www.instagram.com/iaboodomar/",
+    linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276"
   }
 ];
 
