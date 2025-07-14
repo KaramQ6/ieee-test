@@ -116,7 +116,7 @@ export const openingDayEvent = {
     {
       time: "11:03 AM - 11:05 AM",
       session: "Welcome Speech",
-      speaker: null,
+      speaker: "Prof. Belal Zaqaibeh, Dean of IT Faculty",
       description: null,
     },
     {
