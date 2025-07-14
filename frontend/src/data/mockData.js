@@ -29,7 +29,8 @@ export const officers = [
     image: "/images/abdelmonm.webp",
     email: "secretary@ieee-jadara.org",
     linkedin: "https://www.linkedin.com/in/5y3b",
-    insta: "hhttps://www.instagram.com/5y3.b/",
+    // FIX: Corrected typo "hhttps" to "https"
+    insta: "https://www.instagram.com/5y3.b/",
   },
   {
     id: 4,
@@ -50,35 +51,38 @@ export const officers = [
     email: "Abdallahalshyyab@ieee.org",
     linkedin: "https://www.linkedin.com/in/abdallah-abd-alrohman-67a6b8276",
     insta: "https://www.instagram.com/iaboodomar/",
-  }
+  },
 ];
 
 export const ieeeTimeline = [
   {
     year: "1884",
     title: "IEEE Founded",
-    description: "The Institute of Electrical and Electronics Engineers was established."
+    description:
+      "The Institute of Electrical and Electronics Engineers was established.",
   },
   {
     year: "1963",
     title: "Global Expansion",
-    description: "IEEE expanded internationally with regional offices worldwide."
+    description: "IEEE expanded internationally with regional offices worldwide.",
   },
   {
     year: "1980",
     title: "Student Branches",
-    description: "IEEE Student Branch program launched to support student engagement."
+    description:
+      "IEEE Student Branch program launched to support student engagement.",
   },
   {
     year: "2020",
     title: "Digital Innovation",
-    description: "IEEE embraced digital transformation for enhanced member experience."
+    description:
+      "IEEE embraced digital transformation for enhanced member experience.",
   },
   {
     year: "2025",
     title: "Jadara Branch",
-    description: "IEEE Jadara University Student Branch officially established."
-  }
+    description: "IEEE Jadara University Student Branch officially established.",
+  },
 ];
 
 export const openingDayEvent = {
@@ -86,94 +90,104 @@ export const openingDayEvent = {
   description:
     "Join us for the official launch of IEEE Jadara University Student Branch! This inaugural event will introduce our mission, showcase opportunities, and welcome new members to our growing community.",
   date: "2025-07-15",
-  time: "10:00:00", // صيغة 24 ساعة لتجنب مشاكل
+  time: "10:00:00", // 24-hour format
   location: "Main Auditorium, Jadara University",
   schedule: [
-  {
-    "time": "9:00 AM - 10:30 AM",
-    "session": "Registration",
-    "description": Welcoming attendees, distributing name tags, and guiding guests to their seats.
-  },
-  {
-    "time": "10:00 AM - 11:00 AM",
-    "session": "Coffee Break",
-    "description": nulServing coffee and light refreshments. A chance for networking and informal introductions.l
-  },
-  {
-    "time": "11:00 AM - 11:03 AM",
-    "session": "The Jordanian National Anthem",
-    "description": All attendees stand for the national anthem of Jordan.
-  },
-  {
-    "time": "11:03 AM - 11:05 AM",
-    "session": "Welcome Speech",
-    "speaker": null,
-    "description": null
-  },
-  {
-    "time": "11:05 AM - 11:08 AM",
-    "session": "The Holy Quran",
-    "description": A brief and respectful Quran recitation by one of the students.
-  },
-  {
-    "time": "11:10 AM - 11:15 AM",
-    "session": "Opening Speech",
-    "speaker": "Prof. Belal Zaqaibeh, Dean of IT Faculty",
-    "description": null
-  },
-  {
-    "time": "11:15 AM - 11:25 AM",
-    "session": "Speech",
-    "speaker": "Prof. Habis Al-Hatamleh, President of Jadara University",
-    "description": null
-  },
-  {
-    "time": "11:25 AM - 11:30 AM",
-    "session": "Speech",
-    "speaker": "Rayan Dahdooly, IEEE Student Branch Leader",
-    "description": null
-  },
-  {
-    "time": "11:35 AM - 11:50 AM",
-    "session": "Speech",
-    "speaker": "Dr. Mousa AlAkhras, IEEE Jordan Section",
-    "description": null
-  },
-  {
-    "time": "11:50 AM - 12:00 PM",
-    "session": "Group Photo",
-    "speaker": "All Participants",
-    "description": and guests to commemorate the event.
-  },
-  {
-    "time": "12:00 PM - 1:30 PM",
-    "session": "Activity Continues",
-    "speaker": "All Participants",
-    "description": "Visit our activity booths and interact with different teams and student projects."
-  }
-],
+    {
+      time: "9:00 AM - 10:30 AM",
+      session: "Registration",
+      // FIX: Added quotes around the description string
+      description:
+        "Welcoming attendees, distributing name tags, and guiding guests to their seats.",
+    },
+    {
+      time: "10:00 AM - 11:00 AM",
+      session: "Coffee Break",
+      // FIX: Added quotes and corrected the text
+      description:
+        "Serving coffee and light refreshments. A chance for networking and informal introductions.",
+    },
+    {
+      time: "11:00 AM - 11:03 AM",
+      session: "The Jordanian National Anthem",
+      // FIX: Added quotes around the description string
+      description: "All attendees stand for the national anthem of Jordan.",
+    },
+    {
+      time: "11:03 AM - 11:05 AM",
+      session: "Welcome Speech",
+      speaker: null,
+      description: null,
+    },
+    {
+      time: "11:05 AM - 11:08 AM",
+      session: "The Holy Quran",
+      // FIX: Added quotes around the description string
+      description:
+        "A brief and respectful Quran recitation by one of the students.",
+    },
+    {
+      time: "11:10 AM - 11:15 AM",
+      session: "Opening Speech",
+      speaker: "Prof. Belal Zaqaibeh, Dean of IT Faculty",
+      description: null,
+    },
+    {
+      time: "11:15 AM - 11:25 AM",
+      session: "Speech",
+      speaker: "Prof. Habis Al-Hatamleh, President of Jadara University",
+      description: null,
+    },
+    {
+      time: "11:25 AM - 11:30 AM",
+      session: "Speech",
+      speaker: "Rayan Dahdooly, IEEE Student Branch Leader",
+      description: null,
+    },
+    {
+      time: "11:35 AM - 11:50 AM",
+      session: "Speech",
+      speaker: "Dr. Mousa AlAkhras, IEEE Jordan Section",
+      description: null,
+    },
+    {
+      time: "11:50 AM - 12:00 PM",
+      session: "Group Photo",
+      speaker: "All Participants",
+      // FIX: Added quotes around the description string
+      description:
+        "A group photo with all participants and guests to commemorate the event.",
+    },
+    {
+      time: "12:00 PM - 1:30 PM",
+      session: "Activity Continues",
+      speaker: "All Participants",
+      description:
+        "Visit our activity booths and interact with different teams and student projects.",
+    },
+  ],
   sponsors: [
     {
       name: "IEEE Region 8",
       logo: "https://via.placeholder.com/200x100/00468B/FFFFFF?text=IEEE+Region+8",
-      tier: "Gold"
+      tier: "Gold",
     },
     {
       name: "Jadara University",
       logo: "https://via.placeholder.com/200x100/FFB800/000000?text=Jadara+University",
-      tier: "Gold"
+      tier: "Gold",
     },
     {
       name: "Tech Innovation Hub",
       logo: "https://via.placeholder.com/200x100/00468B/FFFFFF?text=Tech+Hub",
-      tier: "Silver"
+      tier: "Silver",
     },
     {
       name: "Future Engineers Society",
       logo: "https://via.placeholder.com/200x100/FFB800/000000?text=Future+Engineers",
-      tier: "Silver"
-    }
-  ]
+      tier: "Silver",
+    },
+  ],
 };
 
 export const branchInfo = {
@@ -187,14 +201,15 @@ export const branchInfo = {
   contact: {
     email: "info@ieee-jadara.org",
     phone: "+962-xxxxxxx",
-    address: "Jadara University, Irbid, Jordan"
-  }
+    address: "Jadara University, Irbid, Jordan",
+  },
 };
 
 export const socialLinks = {
   instagram: "https://instagram.com/ieee_ju",
-  linkedin: "https://www.linkedin.com/company/ieee-jadara-university-student-branch",
-  email: "info@ieee-jadara.org"
+  linkedin:
+    "https://www.linkedin.com/company/ieee-jadara-university-student-branch",
+  email: "info@ieee-jadara.org",
 };
 
 export const quickLinks = [
@@ -203,5 +218,5 @@ export const quickLinks = [
   { name: "Events", href: "#events" },
   { name: "Workshops", href: "#workshops" },
   { name: "Resources", href: "#resources" },
-  { name: "Contact", href: "#contact" }
+  { name: "Contact", href: "#contact" },
 ];
