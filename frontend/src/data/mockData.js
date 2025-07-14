@@ -89,49 +89,73 @@ export const openingDayEvent = {
   time: "10:00:00", // صيغة 24 ساعة لتجنب مشاكل
   location: "Main Auditorium, Jadara University",
   schedule: [
-    {
-      time: "10:00 AM - 10:30 AM",
-      session: "Registration & Welcome Coffee",
-      speaker: "Event Volunteers",
-      description: "Check-in and networking with fellow students."
-    },
-    {
-      time: "10:30 AM - 11:00 AM",
-      session: "Opening Ceremony",
-      speaker: "Dr. ***",
-      description: "Welcome address and branch introduction."
-    },
-    {
-      time: "11:00 AM - 11:45 AM",
-      session: "IEEE Overview & Benefits",
-      speaker: "IEEE Regional Representative",
-      description: "Understanding IEEE membership and opportunities."
-    },
-    {
-      time: "11:45 AM - 12:00 PM",
-      session: "Networking Break",
-      speaker: "All Participants",
-      description: "Refreshments and networking opportunity."
-    },
-    {
-      time: "12:00 PM - 12:45 PM",
-      session: "Technical Workshop Preview",
-      speaker: "Branch Officers",
-      description: "Sneak peek at upcoming workshops and activities."
-    },
-    {
-      time: "12:45 PM - 1:15 PM",
-      session: "Q&A Session",
-      speaker: "Panel Discussion",
-      description: "Questions and answers about branch activities."
-    },
-    {
-      time: "1:15 PM - 2:00 PM",
-      session: "Membership Registration",
-      speaker: "Registration Team",
-      description: "Sign up for IEEE membership and branch activities."
-    }
-  ],
+  {
+    "time": "9:00 AM - 10:30 AM",
+    "session": "Registration",
+    "speaker": null,
+    "description": null
+  },
+  {
+    "time": "10:00 AM - 11:00 AM",
+    "session": "Coffee Break",
+    "speaker": null,
+    "description": null
+  },
+  {
+    "time": "11:00 AM - 11:03 AM",
+    "session": "The Jordanian National Anthem",
+    "speaker": null,
+    "description": null
+  },
+  {
+    "time": "11:03 AM - 11:05 AM",
+    "session": "Welcome Speech",
+    "speaker": null,
+    "description": null
+  },
+  {
+    "time": "11:05 AM - 11:08 AM",
+    "session": "The Holy Quran",
+    "speaker": null,
+    "description": null
+  },
+  {
+    "time": "11:10 AM - 11:15 AM",
+    "session": "Opening Speech",
+    "speaker": "Prof. Belal Zaqaibeh, Dean of IT Faculty",
+    "description": null
+  },
+  {
+    "time": "11:15 AM - 11:25 AM",
+    "session": "Speech",
+    "speaker": "Prof. Habis Al-Hatamleh, President of Jadara University",
+    "description": null
+  },
+  {
+    "time": "11:25 AM - 11:30 AM",
+    "session": "Speech",
+    "speaker": "Rayan Dahdooly, IEEE Student Branch Leader",
+    "description": null
+  },
+  {
+    "time": "11:35 AM - 11:50 AM",
+    "session": "Speech",
+    "speaker": "Dr. Mousa AlAkhras, IEEE Jordan Section",
+    "description": null
+  },
+  {
+    "time": "11:50 AM - 12:00 PM",
+    "session": "Group Photo",
+    "speaker": "All Participants",
+    "description": null
+  },
+  {
+    "time": "12:00 PM - 1:30 PM",
+    "session": "Activity Continues",
+    "speaker": "All Participants",
+    "description": "Activity continues at the Sports Hall"
+  }
+],
   sponsors: [
     {
       name: "IEEE Region 8",
