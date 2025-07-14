@@ -122,7 +122,7 @@ export const openingDayEvent = {
     {
       time: "11:05 AM - 11:08 AM",
       session: "The Holy Quran",
-      // FIX: Added quotes around the description string
+      speaker: "Dr. Saeed Namarneh",
       description:
         "A brief and respectful Quran recitation by one of the students.",
     },
