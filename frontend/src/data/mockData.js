@@ -92,20 +92,17 @@ export const openingDayEvent = {
   {
     "time": "9:00 AM - 10:30 AM",
     "session": "Registration",
-    "speaker": null,
-    "description": null
+    "description": Welcoming attendees, distributing name tags, and guiding guests to their seats.
   },
   {
     "time": "10:00 AM - 11:00 AM",
     "session": "Coffee Break",
-    "speaker": null,
-    "description": null
+    "description": nulServing coffee and light refreshments. A chance for networking and informal introductions.l
   },
   {
     "time": "11:00 AM - 11:03 AM",
     "session": "The Jordanian National Anthem",
-    "speaker": null,
-    "description": null
+    "description": All attendees stand for the national anthem of Jordan.
   },
   {
     "time": "11:03 AM - 11:05 AM",
@@ -116,8 +113,7 @@ export const openingDayEvent = {
   {
     "time": "11:05 AM - 11:08 AM",
     "session": "The Holy Quran",
-    "speaker": null,
-    "description": null
+    "description": A brief and respectful Quran recitation by one of the students.
   },
   {
     "time": "11:10 AM - 11:15 AM",
@@ -147,13 +143,13 @@ export const openingDayEvent = {
     "time": "11:50 AM - 12:00 PM",
     "session": "Group Photo",
     "speaker": "All Participants",
-    "description": null
+    "description": and guests to commemorate the event.
   },
   {
     "time": "12:00 PM - 1:30 PM",
     "session": "Activity Continues",
     "speaker": "All Participants",
-    "description": "Activity continues at the Sports Hall"
+    "description": "Visit our activity booths and interact with different teams and student projects."
   }
 ],
   sponsors: [
