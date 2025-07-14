@@ -94,14 +94,14 @@ export const openingDayEvent = {
   location: "Main Auditorium, Jadara University",
   schedule: [
     {
-      time: "9:00 AM - 10:30 AM",
+      time: "9:30 AM - 10:30 AM",
       session: "Registration",
       // FIX: Added quotes around the description string
       description:
         "Welcoming attendees, distributing name tags, and guiding guests to their seats.",
     },
     {
-      time: "10:00 AM - 11:00 AM",
+      time: "10:30 AM - 11:00 AM",
       session: "Coffee Break",
       // FIX: Added quotes and corrected the text
       description:
