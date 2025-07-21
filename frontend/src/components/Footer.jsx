@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   // Assuming these are from mockData or a similar source
   const socialLinks = { instagram: '#', linkedin: '#', facebook: '#' };
-  const quickLinks = [{ name: 'Home', href: '/' }, { name: 'Our Team', href: '/officers' }, { name: 'Events', href: '/opening-day' }];
+  const quickLinks = [{ name: 'Home', href: '/' }, { name: 'Our Team', href: '/officers' }, { name: 'Events' }];
 
   return (
     <footer id="contact" className="bg-gray-900 text-white">

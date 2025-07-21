@@ -36,7 +36,6 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-10">
             <NavItem to="/">Home</NavItem>
-            <NavItem to="/opening-day">Opening Day</NavItem>
             <NavItem to="/officers">Our Team</NavItem>
             <NavItem to="/about-ieee">About IEEE</NavItem>
             {/* 1. Added the new link with a custom purple color for the active state */}
@@ -74,7 +73,6 @@ const Navbar = () => {
           >
             <div className="px-4 pt-2 pb-4 space-y-2">
               <Link to="/" className="block py-2 text-gray-700 font-medium">Home</Link>
-              <Link to="/opening-day" className="block py-2 text-gray-700 font-medium">Opening Day</Link>
               <Link to="/officers" className="block py-2 text-gray-700 font-medium">Our Team</Link>
               <Link to="/about-ieee" className="block py-2 text-gray-700 font-medium">About IEEE</Link>
               {/* 2. Added the new link to the mobile menu */}
